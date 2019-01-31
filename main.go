@@ -26,10 +26,10 @@ func calculateArray(arr []int, pos int) int {
 	return result
 }
 
-func fibo() {
+func fibo(n int) {
 	x, y := 0, 0
-	var f [100]int
-	for i := 0; i < 100; i++ {
+	f := make([]int, n)
+	for i := 0; i < n; i++ {
 		if i == 0 {
 			//fmt.Print(i, " ")
 			x = i
@@ -58,7 +58,7 @@ func fibo() {
 // Bootstrap code {
 // Code snippet in grey is not editable and is necessary
 func main() {
-	fibo()
+	fibo(10)
 	// scanner := bufio.NewScanner(os.Stdin)
 	// scanner.Scan() // use `for scanner.Scan()` to keep reading
 	// line := scanner.Text()
